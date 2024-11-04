@@ -1,0 +1,34 @@
+# _config.yml
+title: Intrinsic Labs LLC
+description: Innovative Software Development & Creative Solutions
+baseurl: ""
+url: "https://intrinsic-labs.github.io"
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  departments:
+    output: true
+    permalink: /:collection/:name
+  projects:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "departments"
+    values:
+      layout: "department"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

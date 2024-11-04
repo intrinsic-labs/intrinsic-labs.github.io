@@ -1,0 +1,10 @@
+# _data/navigation.yml
+main:
+  - title: Home
+    url: /
+  - title: Departments
+    url: /departments/
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/

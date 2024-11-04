@@ -1,0 +1,16 @@
+<!-- _includes/project-card.html -->
+<div class="project-card">
+  <h2 class="project-title">{{ include.title }}</h2>
+  {% if include.image %}
+    <img src="{{ include.image }}" alt="{{ include.title }}" class="project-image">
+  {% endif %}
+  <div class="project-content">
+    <p class="project-description">{{ include.description }}</p>
+    {% if include.video_id %}
+      {% include video-player.html video_id=include.video_id %}
+    {% endif %}
+    {% if include.button_text and include.button_url %}
+      <a href="{{ include.button_url }}" class="button">{{ include.button_text }}</a>
+    {% endif %}
+  </div>
+</div>

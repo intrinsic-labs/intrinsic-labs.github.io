@@ -1,0 +1,12 @@
+# _layouts/project.html
+---
+layout: default
+---
+<div class="project">
+    <h1>{{ page.title }}</h1>
+    <div class="project-meta">
+        <p>Status: {{ page.status }}</p>
+        <p>Client: {{ page.client }}</p>
+    </div>
+    {{ content }}
+</div>

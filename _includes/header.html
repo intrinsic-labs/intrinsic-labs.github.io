@@ -1,0 +1,13 @@
+<!-- _includes/header.html -->
+<header class="site-header">
+  <nav class="container">
+    <div class="nav-brand">
+      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
+    <ul class="nav-menu">
+      {% for item in site.data.navigation.main %}
+        <li><a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
